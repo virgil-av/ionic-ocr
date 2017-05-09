@@ -13,6 +13,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import {HttpModule} from "@angular/http";
 import {OcrapiPage} from "../pages/ocrapi/ocrapi";
 import {OcradPage} from "../pages/ocrad/ocrad";
+import {TeslocalPage} from "../pages/teslocal/teslocal";
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import {OcradPage} from "../pages/ocrad/ocrad";
     HomePage,
     TabsPage,
     OcrapiPage,
-    OcradPage
+    OcradPage,
+    TeslocalPage
   ],
   imports: [
     BrowserModule,
@@ -38,7 +40,8 @@ import {OcradPage} from "../pages/ocrad/ocrad";
     HomePage,
     TabsPage,
     OcrapiPage,
-    OcradPage
+    OcradPage,
+    TeslocalPage
   ],
   providers: [
     StatusBar,
