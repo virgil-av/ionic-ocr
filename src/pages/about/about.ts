@@ -19,9 +19,7 @@ export class AboutPage {
 
   }
 
-  ionViewDidLoad(){
-    this.preloadTesseract()
-  }
+
 
   start(){
     this.currentT = new Date().getTime();
@@ -33,9 +31,9 @@ export class AboutPage {
   }
 
   preloadTesseract(){
-    Tesseract.recognize('assets/images/1x1.png', {
-      lang: 'eng',
-    });
+    // Tesseract.recognize('assets/images/1x1.png', {
+    //   lang: 'eng',
+    // });
 
   }
 
@@ -43,9 +41,7 @@ export class AboutPage {
 
   readImage(image: any){
 
-    let job1 = Tesseract.recognize(image, {
-      lang: 'eng',
-    });
+    let job1 = Tesseract.recognize(image)
 
     this.isLoading = 'Reading';
     this.start();

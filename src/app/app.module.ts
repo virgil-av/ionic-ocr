@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {HttpModule} from "@angular/http";
 import {OcrapiPage} from "../pages/ocrapi/ocrapi";
+import {OcradPage} from "../pages/ocrad/ocrad";
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import {OcrapiPage} from "../pages/ocrapi/ocrapi";
     ContactPage,
     HomePage,
     TabsPage,
-    OcrapiPage
+    OcrapiPage,
+    OcradPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import {OcrapiPage} from "../pages/ocrapi/ocrapi";
     ContactPage,
     HomePage,
     TabsPage,
-    OcrapiPage
+    OcrapiPage,
+    OcradPage
   ],
   providers: [
     StatusBar,
