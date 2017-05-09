@@ -33,7 +33,7 @@ export class AboutPage {
   }
 
   preloadTesseract(){
-    let job1 = Tesseract.recognize('../../assets/images/1x1.png', {
+    Tesseract.recognize('assets/images/1x1.png', {
       lang: 'eng',
     });
 
