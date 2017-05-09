@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Welcome to Ionic!</h2>
+  <button ion-button color="light" (click)="getData('1')">Get API 1</button>
+  <button ion-button color="dark" (click)="getData('3')">Get API 2</button>
+
+  <ion-card>
+
+    <ion-card-header>
+      Source {{dataSource}} below:
+    </ion-card-header>
+
+    <ion-card-content>
+      <div *ngFor="let post of dataAPI, let i = index">
+        <span>{{i}}. </span>{{post.email}}
+
+      </div>
+
+    </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

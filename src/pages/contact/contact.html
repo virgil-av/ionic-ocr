@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      View update simple demo
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card>
+
+    <ion-card-header>
+      {{selectedColor}}
+    </ion-card-header>
+
+    <ion-card-content>
+      <!-- Add card content here! -->
+    </ion-card-content>
+
+  </ion-card>
+
+  <button ion-button color="light" (click)="changeColor('light')">Light</button>
+  <button ion-button (click)="changeColor('blue')">Default</button>
+  <button ion-button color="secondary" (click)="changeColor('green')">Secondary</button>
+  <button ion-button color="danger" (click)="changeColor('red')">Danger</button>
+  <button ion-button color="dark" (click)="changeColor('black')">Dark</button>
+</ion-content>
