@@ -15,7 +15,6 @@ import {OcrapiPage} from "../pages/ocrapi/ocrapi";
 import {OcradPage} from "../pages/ocrad/ocrad";
 
 
-
 @NgModule({
   declarations: [
     MyApp,

@@ -31,13 +31,26 @@ export class OcrapiPage {
 
 
 
-  readImage(image: any){
-    console.log(image);
+  readImage(img: any){
+
+    let canvas = document.createElement("canvas");
+    canvas.width = img.width;
+    canvas.height = img.height;
+
+    // Copy the image contents to the canvas
+    let ctx = canvas.getContext("2d");
+    ctx.drawImage(img, 0, 0);
+
+    let dataURL = canvas.toDataURL("image/png");
+
+
     this.isLoading = 'Reading';
-    this.ocr.postToOCR(image).subscribe(response => {
-      this.displayText = response;
+    this.start();
+    this.ocr.postToOCR(dataURL).subscribe(response => {
+      this.displayText = response.ParsedResults[0].ParsedText;
       this.isLoading = 'Done! Below is the output.';
       console.log(response);
+      this.stop();
     })
   }
 
