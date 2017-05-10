@@ -2,6 +2,7 @@ import {Component, NgZone} from '@angular/core';
 import { NavController } from 'ionic-angular';
 import * as Tesseract from 'tesseract.js';
 
+// declare let Tesseract:any;
 
 @Component({
   selector: 'page-about',
